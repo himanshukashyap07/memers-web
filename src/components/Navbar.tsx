@@ -64,6 +64,7 @@ export default function Navbar() {
                 <Link href="/" className="flex items-center gap-2">
                     <Image src="/Logo.png" alt="Memers Logo" width={70} height={70} className="rounded-full ring-2 ring-blue-500/30 object-cover" />
                 </Link>
+                
                 <div className="hidden md:flex items-center gap-8 text-sm font-medium text-[var(--foreground)] opacity-80">
                     <Link href="/" className="hover:text-[var(--primary)] transition-colors">Home</Link>
                     <Link href="/about" className="hover:text-[var(--primary)] transition-colors">About Us</Link>
