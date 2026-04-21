@@ -14,7 +14,7 @@ export default function Navbar() {
         setMounted(true);
         const theme = localStorage.getItem("theme");
         const bodyClass = document.documentElement.classList;
-        
+
         if (theme === "dark") {
             bodyClass.add("dark");
             setIsDark(true);
@@ -50,7 +50,7 @@ export default function Navbar() {
             <nav className="sticky top-0 z-50 bg-white border-b border-slate-200 h-20">
                 <div className="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
                     <div className="flex items-center gap-2">
-                        <Image src="/Logo.png" alt="Memers Logo" width={80} height={80} className="rounded-full ring-2 ring-blue-500/30 object-cover" />
+                        <Image src="/Logo.png" alt="Memers Logo" width={70} height={70} className="rounded-full ring-2 ring-blue-500/30 object-cover" />
                     </div>
                     <div className="w-10 h-10 bg-slate-100 rounded-full animate-pulse" />
                 </div>
@@ -62,10 +62,7 @@ export default function Navbar() {
         <nav className="sticky top-0 z-50 backdrop-blur-xl bg-[var(--background)]/80 border-b border-[var(--border)] transition-colors duration-300">
             <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
                 <Link href="/" className="flex items-center gap-2">
-                    <Image src="/Logo.png" alt="Memers Logo" width={80} height={80} className="rounded-full ring-2 ring-blue-500/30 object-cover" />
-                    <span className="text-2xl font-[family-name:var(--font-outfit)] font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-indigo-600 dark:from-blue-400 dark:to-indigo-400">
-                        Memers
-                    </span>
+                    <Image src="/Logo.png" alt="Memers Logo" width={70} height={70} className="rounded-full ring-2 ring-blue-500/30 object-cover" />
                 </Link>
                 <div className="hidden md:flex items-center gap-8 text-sm font-medium text-[var(--foreground)] opacity-80">
                     <Link href="/" className="hover:text-[var(--primary)] transition-colors">Home</Link>
